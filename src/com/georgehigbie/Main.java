@@ -14,6 +14,10 @@ public class Main {
         bobsAccount.printBalance();
         bobsAccount.withdrawal(200.0);
 
+        System.out.println("####################################");
+        bobsAccount.printAccountHolderName();
+        System.out.println("####################################");
+
         bobsAccount.deposit(100.0);
         bobsAccount.withdrawal(50.0);
 

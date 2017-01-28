@@ -12,6 +12,10 @@ public class Account {
     private String emailAddress;
     private String phoneNumber;
 
+    public Account(){
+
+    }
+
     public Account(String number, double balance, String customerFirstName, String customerLastName, String emailAddress, String phoneNumber) {
         if(number.length() < 9){
             System.out.println("Please enter a value of 9 digits.");
@@ -46,6 +50,10 @@ public class Account {
     public void printBalance(){
         System.out.println("The account balance of account #" + this.number + " is $" + this.getBalance() + ".");
         System.out.println("************************************************************");
+    }
+
+    public void printAccountHolderName(){
+        System.out.println("The primary account holder is " + this.getCustomerFirstName() + this.getCustomerLastName());
     }
 
 
