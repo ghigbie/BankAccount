@@ -36,22 +36,18 @@ public class Main {
         pamsAccount.printAccountHolderName();
 
         System.out.println("####################################");
-        System.out.println("#############VIP CUSTOMER 1#######################");
+        System.out.println("#############VIP CUSTOMERS#######################");
+        System.out.println("####################################");
 
         VIPCustomer ted = new VIPCustomer();
-        System.out.println();
-
-        System.out.println("####################################");
-        System.out.println("#############VIP CUSTOMER 2#######################");
-
         VIPCustomer ted2 = new VIPCustomer("Teddy", "Bear", "tb@gemail.com");
-
-        System.out.println("####################################");
-        System.out.println("#############VIP CUSTOMER 3#######################");
-
         VIPCustomer ted3 = new VIPCustomer("Teddy", "Bear", "tb@gemail.com", 2000.00);
 
         VIPCustomer vips[] = {ted, ted2, ted3};
-
+        for(int i = 0; i < vips.length; i++){
+            System.out.println("#############VIP CUSTOMER +" + i+1 + "#######################");
+            System.out.println(vips[i].getFirstName() + " " + vips[i].getLastName() + " " + vips[i].getEmailAddress() +
+                    " " + vips[i].getCreditLimit());
+        }
     }
 }
