@@ -22,7 +22,7 @@ public class VIPCustomer {
     }
 
     public VIPCustomer(){
-        this("John", "Doe", "jg@email.com", 0.0);
+        this("John", "Doe", "jg@email.com", 0.0); //this also calls the first constructor
     }
 
     public String getFirstName() {
