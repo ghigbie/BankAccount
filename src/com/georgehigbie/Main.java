@@ -7,6 +7,9 @@ public class Main {
 
         Account bobsAccount = new Account();
         bobsAccount.setNumber("123456789");
+        bobsAccount.setCustomerFirstName("Robert");
+        bobsAccount.setCustomerLastName("Frost");
+        bobsAccount.setPhoneNumber("808-843-9865");
         bobsAccount.setBalance(400.0);
         bobsAccount.printBalance();
         bobsAccount.withdrawal(200.0);

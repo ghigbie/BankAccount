@@ -12,6 +12,15 @@ public class Account {
     private String emailAddress;
     private String phoneNumber;
 
+    public Account(String number, double balance, String customerFirstName, String customerLastName, String emailAddress, String phoneNumber) {
+        this.number = number;
+        this.balance = balance;
+        this.customerFirstName = customerFirstName;
+        this.customerLastName = customerLastName;
+        this.emailAddress = emailAddress;
+        this.phoneNumber = phoneNumber;
+    }
+
     public void deposit(double depositAmount){
         this.balance += depositAmount;
         System.out.println("$" + depositAmount + " deposited into the account, " + this.number + ".");
