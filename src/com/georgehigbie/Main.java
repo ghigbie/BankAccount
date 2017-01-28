@@ -42,9 +42,10 @@ public class Main {
         VIPCustomer ted = new VIPCustomer();
         VIPCustomer ted2 = new VIPCustomer("Teddy", "Bear", "tb@gemail.com");
         VIPCustomer ted3 = new VIPCustomer("Teddy", "Bear", "tb@gemail.com", 2000.00);
+        VIPCustomer ted4 = new VIPCustomer("teddy", "bear", "tb@email.com");
 
 
-        VIPCustomer vips[] = {ted, ted2, ted3};
+        VIPCustomer vips[] = {ted, ted2, ted3, ted4};
         for(int i = 0; i < vips.length; i++){
             System.out.println("#############VIP CUSTOMER +" + i+1 + "#######################");
             System.out.println(vips[i].getFirstName() + " " + vips[i].getLastName() + " " + vips[i].getEmailAddress() +
