@@ -43,6 +43,7 @@ public class Main {
         VIPCustomer ted2 = new VIPCustomer("Teddy", "Bear", "tb@gemail.com");
         VIPCustomer ted3 = new VIPCustomer("Teddy", "Bear", "tb@gemail.com", 2000.00);
 
+
         VIPCustomer vips[] = {ted, ted2, ted3};
         for(int i = 0; i < vips.length; i++){
             System.out.println("#############VIP CUSTOMER +" + i+1 + "#######################");
