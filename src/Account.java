@@ -12,13 +12,18 @@ public class Account {
 
     public void deposit(double depositAmount){
         this.balance += depositAmount;
+        System.out.println("$" + depositAmount + " deposited.");
+        System.out.println("The account balance is now $" + balance +".");
     }
 
     public void withdrawal(double withdrawalAmount){
         if(balance - withdrawalAmount <= 0){
-            System.out.println("Only "  balance + " available. This withdrawal cannot be processes at this time.");
+            System.out.println("Only " + balance + " available. This withdrawal cannot be processes at this time.");
+        }else {
+            this.balance -= withdrawalAmount;
+            System.out.println("$ " + withdrawalAmount + "has been withdrawn.");
+            System.out.println("The account balance is now $" + balance +".");
         }
-        this.balance -= withdrawalAmount;
     }
 
 
