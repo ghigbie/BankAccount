@@ -29,5 +29,10 @@ public class Main {
         tomsAccount.setNumber("987654321");
         tomsAccount.setBalance(500.00);
         tomsAccount.printBalance();
+
+        System.out.println("####################################");
+
+        Account pamsAccount = new Account("834781234", 300.0, "pam", "pammy", "adfadf@gmail.com", "808-838-6543");
+        pamsAccount.printAccountHolderName();
     }
 }
