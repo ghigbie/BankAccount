@@ -13,10 +13,16 @@ public class Account {
     private String phoneNumber;
 
     public Account(String number, double balance, String customerFirstName, String customerLastName, String emailAddress, String phoneNumber) {
-        this.number = number;
+        if(number.length() < 9){
+            System.out.println("Please enter a value of 9 digits.");
+        }else{
+            this.number = number;
+        }
+
         this.balance = balance;
-        this.customerFirstName = customerFirstName;
-        this.customerLastName = customerLastName;
+
+        this.customerFirstName = customerFirstName.substring(0, 1).toUpperCase() + customerFirstName.substring(1).toLowerCase();
+        this.customerLastName = customerLastName.substring(0,1).toUpperCase() + customerLastName.substring(1).toLowerCase();
         this.emailAddress = emailAddress;
         this.phoneNumber = phoneNumber;
     }
