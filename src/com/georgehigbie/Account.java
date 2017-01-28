@@ -53,7 +53,7 @@ public class Account {
     }
 
     public void printAccountHolderName(){
-        System.out.println("The primary account holder is " + this.getCustomerFirstName() + this.getCustomerLastName());
+        System.out.println("The primary account holder is " + this.getCustomerFirstName() + " " + this.getCustomerLastName() + ".");
     }
 
 
