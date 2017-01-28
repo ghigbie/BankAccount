@@ -34,5 +34,22 @@ public class Main {
 
         Account pamsAccount = new Account("834781234", 300.0, "pam", "pammy", "adfadf@gmail.com", "808-838-6543");
         pamsAccount.printAccountHolderName();
+
+        System.out.println("####################################");
+        System.out.println("#############VIP CUSTOMER 1#######################");
+
+        VIPCustomer ted = new VIPCustomer();
+        System.out.println();
+
+        System.out.println("####################################");
+        System.out.println("#############VIP CUSTOMER 2#######################");
+
+        VIPCustomer ted2 = new VIPCustomer("Teddy", "Bear", "tb@gemail.com");
+
+        System.out.println("####################################");
+        System.out.println("#############VIP CUSTOMER 3#######################");
+
+        VIPCustomer ted3 = new VIPCustomer("Teddy", "Bear", "tb@gemail.com", 2000.00);
+
     }
 }
