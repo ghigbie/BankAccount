@@ -28,6 +28,11 @@ public class Account {
         }
     }
 
+    public void printBalance(){
+        System.out.println("The account balance of account #" + this.number + " is $" + this.getBalance() + ".");
+        System.out.println("************************************************************");
+    }
+
 
     public String getNumber() {
         return number;

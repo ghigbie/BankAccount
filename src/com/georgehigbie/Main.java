@@ -6,6 +6,9 @@ public class Main {
 	// write your code here
 
         Account bobsAccount = new Account();
+        bobsAccount.setNumber("123456789");
+        bobsAccount.setBalance(400.0);
+        bobsAccount.printBalance();
         bobsAccount.withdrawal(200.0);
 
         bobsAccount.deposit(100.0);
@@ -15,7 +18,8 @@ public class Main {
         bobsAccount.withdrawal(30.0);
 
         Account tomsAccount = new Account();
+        tomsAccount.setNumber("987654321");
         tomsAccount.setBalance(500.00);
-        tomsAccount.getBalance();
+        tomsAccount.printBalance();
     }
 }
