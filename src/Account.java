@@ -10,6 +10,18 @@ public class Account {
     private String emailAddress;
     private String phoneNumber;
 
+    public void deposit(double depositAmount){
+        this.balance += depositAmount;
+    }
+
+    public void withdrawal(double withdrawalAmount){
+        if(balance - withdrawalAmount <= 0){
+            System.out.println("Only "  balance + " available. This withdrawal cannot be processes at this time.");
+        }
+        this.balance -= withdrawalAmount;
+    }
+
+
     public String getNumber() {
         return number;
     }
