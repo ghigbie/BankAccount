@@ -51,5 +51,7 @@ public class Main {
 
         VIPCustomer ted3 = new VIPCustomer("Teddy", "Bear", "tb@gemail.com", 2000.00);
 
+        VIPCustomer vips[] = {ted, ted2, ted3};
+
     }
 }
