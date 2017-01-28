@@ -11,8 +11,8 @@ public class VIPCustomer {
     private double creditLimit;
 
     public VIPCustomer(String firstName, String lastName, String emailAddress, double creditLimit){
-        this.firstName = firstName;
-        this.lastName = lastName.substring(0,1).toUpperCase() +
+        this.firstName = firstName.substring(0,1).toUpperCase() + firstName.substring(1).toLowerCase();
+        this.lastName = lastName.substring(0,1).toUpperCase() + lastName.substring(1).toLowerCase();
         this.emailAddress = emailAddress;
         this.creditLimit = creditLimit;
     }
