@@ -13,7 +13,8 @@ public class Account {
     private String phoneNumber;
 
     public Account(){
-
+        this("000000000", 0.0, "John", "Doe", "jd@email.com", "808-808-8080");
+        //added default values
     }
 
     public Account(String number, double balance, String customerFirstName, String customerLastName, String emailAddress, String phoneNumber) {
