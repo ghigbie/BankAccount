@@ -15,7 +15,7 @@ public class Account {
     public void deposit(double depositAmount){
         this.balance += depositAmount;
         System.out.println("$" + depositAmount + " deposited into the account, " + this.number + ".");
-        System.out.println("The account balance is now $" + this.balance +".");
+        System.out.println("The account balance is now $ " + this.balance +".");
     }
 
     public void withdrawal(double withdrawalAmount){

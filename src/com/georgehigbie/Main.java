@@ -16,6 +16,7 @@ public class Main {
 
         bobsAccount.deposit(51.0);
         bobsAccount.withdrawal(30.0);
+        bobsAccount.printBalance();
 
         Account tomsAccount = new Account();
         tomsAccount.setNumber("987654321");
