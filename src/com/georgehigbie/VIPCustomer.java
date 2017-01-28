@@ -18,10 +18,7 @@ public class VIPCustomer {
     }
 
     public VIPCustomer(String firstName, String lastName, String emailAddress){
-        this.firstName = firstName.substring(0,1).toUpperCase() + firstName.substring(1).toLowerCase();
-        this.lastName = lastName.substring(0,1).toUpperCase() + lastName.substring(1).toLowerCase();
-        this.emailAddress = emailAddress;
-        this.creditLimit = 0.0;
+        this(firstName, lastName, emailAddress, 0.00); //this calls the first constructor
     }
 
     public VIPCustomer(){
